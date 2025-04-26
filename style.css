@@ -13,6 +13,82 @@
 
 }
 .menu-warning {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff8f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffe4cc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.warning-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffd8b3;
+    color: #c05621;
+    font-size: 1.2em;
+}
+
+.warning-header strong {
+    margin-left: 8px;
+}
+
+.warning-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.warning-content li {
+    padding: 8px 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.warning-content li:before {
+    content: "•";
+    color: #ffa726;
+    margin-right: 10px;
+}
+
+.whatsapp-link {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.instagram-link {
+    color: #E1306C;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.whatsapp-link:hover, .instagram-link:hover {
+    text-decoration: underline;
+}
+
+.warning-content strong {
+    color: #c53030;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .menu-warning {
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .warning-header {
+        font-size: 1.1em;
+    }
+}
+.menu-warning {
     background-color: #fff8e1;
     border-left: 6px solid #ff9800;
     padding: 20px;
