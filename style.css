@@ -36,6 +36,54 @@
 .warning-header strong {
     margin-left: 8px;
 }
+/* About Section - Dark Theme */
+#about {
+    padding: 80px 20px;
+    background-color: #000; /* black background */
+    font-family: 'Poppins', sans-serif;
+    color: #eee; /* light text for contrast */
+    line-height: 1.7;
+    display: none;
+}
+
+#about.active {
+    display: block;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.5rem;
+    color: #ffae7c; /* warm accent for dark theme */
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #ddd;
+    padding: 20px;
+    background: #111; /* slightly lighter black for contrast */
+    border-left: 5px solid #ffae7c;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05); /* subtle light shadow */
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .about-container h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
 
 .warning-content ul {
     list-style-type: none;
