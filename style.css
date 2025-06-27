@@ -12,6 +12,74 @@
     --light-bg: #f9f9f9;
 
 }
+/* About Section - Dark Theme with Light Text Box */
+#about {
+    padding: 100px 20px;
+    background-color: #0b0b0b; /* main site background */
+    font-family: 'Poppins', sans-serif;
+    color: #eaeaea;
+    line-height: 1.8;
+    display: none;
+}
+
+#about.active {
+    display: block;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about-container h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.75rem;
+    color: #ff9966;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.about-container h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ff9966;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    color: #333;
+    background: #fdf5f0; /* light warm beige box */
+    border-left: 5px solid #ff9966;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 25px 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.about-content p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+    .about-container h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        padding: 20px;
+    }
+}
+
 .menu-warning {
     max-width: 600px;
     margin: 20px auto;
@@ -35,53 +103,6 @@
 
 .warning-header strong {
     margin-left: 8px;
-}
-/* About Section - Dark Theme */
-#about {
-    padding: 80px 20px;
-    background-color: #000; /* black background */
-    font-family: 'Poppins', sans-serif;
-    color: #eee; /* light text for contrast */
-    line-height: 1.7;
-    display: none;
-}
-
-#about.active {
-    display: block;
-}
-
-.about-container {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about-container h2 {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 2.5rem;
-    color: #ffae7c; /* warm accent for dark theme */
-    margin-bottom: 30px;
-}
-
-.about-content p {
-    font-size: 1.1rem;
-    color: #ddd;
-    padding: 20px;
-    background: #111; /* slightly lighter black for contrast */
-    border-left: 5px solid #ffae7c;
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05); /* subtle light shadow */
-    border-radius: 8px;
-}
-
-@media (max-width: 768px) {
-    .about-container h2 {
-        font-size: 2rem;
-    }
-
-    .about-content p {
-        font-size: 1rem;
-        padding: 15px;
-    }
 }
 
 
